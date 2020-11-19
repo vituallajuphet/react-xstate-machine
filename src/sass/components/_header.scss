@@ -1,0 +1,40 @@
+.header{
+    background: #dfc8c8;
+    padding: .6rem 0;
+}
+
+.navCont{
+    
+    @include flex(flex, flex-start);
+    align-items: center;
+
+    .nav{
+        margin-left: 2em;
+        &__list{
+            @include flex(flex, flex-start);
+
+            &--item{
+                margin-left: 1em;
+                
+                a{
+                    text-decoration: none;
+                    color: #222;
+                    font-weight: bold;
+                    &:hover{
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+        .active-itemLink{
+            opacity: .5;
+        }
+
+    }
+}
+
+.Logo{
+    max-width: 200px;
+    img{width: 100%;}
+
+}
